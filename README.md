@@ -5,6 +5,8 @@ The pipeline uses VCF file (File = /data-shared/vcf_examples/luscinia_vars.vcf.g
 
 ### Running the pipeline
 
+File is prepared to be executable and simply run:
+
 ``` 
 chmod +x new_workflow.sh
 
