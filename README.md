@@ -5,9 +5,8 @@ The pipeline uses VCF file (File = /data-shared/vcf_examples/luscinia_vars.vcf.g
 
 ### Running the pipeline
 
-There is no necessary installation of any tool for this pipeline, it can be simply run by
-
 ``` 
+chmod +x new_workflow.sh
 ./new_workflow.sh
 ``` 
 
