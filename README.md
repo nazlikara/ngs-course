@@ -13,7 +13,7 @@ There is no necessary installation of any tool for this pipeline, it can be simp
 
 ### Run pipeline step-by-step
 
-``` new_workflow.sh```  takes VCF file, extracts variant information only by eliminating description part of the file, then extracts the chromosome, position and PHRED score information. Chromosome number that variant occurs is located in column 1 (CHROM), position is specified at column 2 (POS) and PHRED score for the variant is located on column 6 (QUAL). Then, it creates a new file ``` scores.tsv ```  to be used for plotting in R.
+``` new_workflow.sh```  takes VCF file, extracts variant information only by eliminating description part of the file, then extracts the chromosome, position and PHRED score information; which shows the quality of the reads. Chromosome number that variant occurs is located in column 1 (CHROM), position is specified at column 2 (POS) and PHRED score for the variant is located on column 6 (QUAL). Then, it creates a new file ``` scores.tsv ```  to be used for plotting in R.
 
 #### 1. Defining variable
 
@@ -44,5 +44,15 @@ INPUT=/data-shared/vcf_examples/luscinia_vars.vcf.gz
 
 #### Results - ggplot
 
+##### Distribution of PHRED scores by chromosomes
+
+![Distribution_of_PHRED_by_chromosomes](https://user-images.githubusercontent.com/97293823/148697491-34d03b2c-311d-43ce-87d6-8e7e16c5750f.png)
+
+This plot shows how the quality scores of variations are distributed by chromosomes. According to the plot, relatively high PHRED scores are obtained for almost all positions for Chromosome 1, 2 and 3. As number of chromosomes increases, PHRED scores seem to decrease and all positions for chromosomes do not seem to be covered with high PHRED scores. It might be interpreted as the quality of reads decreases.
+
+##### Distribution of PHRED scores on whole genome
+
+![Distribution_on_genome](https://user-images.githubusercontent.com/97293823/148697499-f72f6d53-a3ed-4ad1-867b-fec08d4ea461.png)
 
 
+This plot shows how the quality scores of variations are distributed on whole genome. It illustrates that not all the variations have similar and high PHRED score. PHRED score on whole genome shows a geometric distribution.
