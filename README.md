@@ -46,7 +46,7 @@ INPUT=/data-shared/vcf_examples/luscinia_vars.vcf.gz
 
 ##### Distribution of PHRED scores by chromosomes
 
-![Distribution_of_PHRED_by_chromosomes](https://user-images.githubusercontent.com/97293823/148697491-34d03b2c-311d-43ce-87d6-8e7e16c5750f.png)
+![Distribution_of_PHRED_by_chromosomes](https://user-images.githubusercontent.com/97293823/148703730-3f2af768-2fe8-4cdd-aae4-ed8628f7fe5c.png)
 
 This plot shows how the quality scores of variations are distributed by chromosomes. According to the plot, relatively high PHRED scores are obtained for almost all positions for Chromosome 1, 2 and 3. As number of chromosomes increases, PHRED scores seem to decrease and all positions for chromosomes do not seem to be covered with high PHRED scores. It might be interpreted as the quality of reads decreases.
 
